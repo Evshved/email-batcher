@@ -39,8 +39,7 @@ module HypofriendDemo
     SLICE_COUNTER = 100
 
     def perform
-      fetch_json_data
-      lines = FastJsonparser.load(open(IMPORT_URL)).read)
+      lines = FastJsonparser.load(open(IMPORT_URL).read)
       leads = perform_lines(lines)
       ids = create_timestamps(leads)
       perform_jobs(ids)
