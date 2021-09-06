@@ -74,7 +74,7 @@ module HypofriendDemo
     end
 
     def perform_lines(lines)
-      # Implement fast json parser loader
+      # Implement fast json parser loader data
       # also we can use threads or ractors for implement more scaleable parsing file feature(chunk file and write into db)
       # for example (chunked part of file)
       # ActiveRecord::Base.transaction do
