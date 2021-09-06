@@ -42,6 +42,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "activesupport"
   spec.add_dependency "pg"
   spec.add_dependency "fast_jsonparser"
+  spec.add_dependency "sidekiq"
 
   spec.add_development_dependency "rspec", "~> 3.0"
 end

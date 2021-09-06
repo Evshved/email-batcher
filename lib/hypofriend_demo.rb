@@ -5,6 +5,7 @@ require 'activerecord-import'
 require 'pg'
 require 'fast_jsonparser'
 require 'open-uri'
+require 'sidekiq'
 
 # Architecture TODO
 
