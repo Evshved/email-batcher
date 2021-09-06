@@ -40,7 +40,7 @@ module HypofriendDemo
 
     def perform
       fetch_json_data
-      lines = FastJsonparser.load("./data.json")
+      lines = FastJsonparser.load(open(IMPORT_URL)).read)
       leads = perform_lines(lines)
       ids = create_timestamps(leads)
       perform_jobs(ids)
@@ -72,10 +72,6 @@ module HypofriendDemo
         ids << leads.pluck(:id)
       end
       ids
-    end
-
-    def fetch_json_data
-      open(IMPORT_URL).read
     end
 
     def perform_lines(lines)
