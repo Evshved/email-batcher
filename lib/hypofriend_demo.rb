@@ -68,7 +68,7 @@ module HypofriendDemo
         end
         
         leads = Lead.import temp_records
-        ids << leads.pluck(:id)
+        ids << temp_records.pluck(:id)
       end
       ids
     end
